@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand&display=swap);
 
 body {
-  margin-top: 200px;
+  margin-top: 220px;
   background-repeat: no-repeat;
   background-size: 1000px 1000px;
   background-position: center;
@@ -13,12 +13,30 @@ body {
 }
 
 nav {
+  float: left;
   text-align: center;
   overflow: hidden;
   background-color: #ffffff;
   position: fixed;
   top: 0;
   width: 100%;
+  padding-bottom: 20px;
+}
+
+nav.OEVP {
+  background-image: linear-gradient(to bottom right,#33cccc, black)
+}
+nav.SPOE {
+  background-image: linear-gradient(to bottom right,red, white)
+}
+nav.FPOE {
+  background-image: linear-gradient(to bottom right,blue, white)
+}
+nav.NEOS {
+  background-image: linear-gradient(to bottom right,#ff33cc, #770055)
+}
+nav.GRUENE {
+  background-image: linear-gradient(to bottom right,green,white )
 }
 
 h1 {
@@ -62,7 +80,12 @@ button.home {
 
 button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  background-color: #999999;
+  background-color: #000000;
+  transform: scale(1.1, 1.1);
+}
+
+button.home:hover {
+  background-color: #AAAAAA;
 }
 
 ol {
@@ -105,6 +128,9 @@ section.wide {
 img.party-logo{
   margin-left: 10%;
     float:left;
+    display: block;
+    width: 250px;
+    height: 350px;
 }
 
 img.center {
@@ -113,6 +139,28 @@ img.center {
   margin-right: auto;
   width: 50%;
 }
+
+img.fun { /*IT´S ONLY ON THE VERY BOTTOM OF THE IMPRESSUM*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+img.fun:hover {
+  transform:rotate(1800deg);
+  transition: 0.5s;
+  transform: rotate(-360deg);
+  width: 300px;
+  height: 80px;
+  border: double 4px transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(to bottom, red, red, white,white, white,red,red), radial-gradient(circle at top left, #f00,#3020ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+
 
 table.party-info {
   table-layout: fixed;
