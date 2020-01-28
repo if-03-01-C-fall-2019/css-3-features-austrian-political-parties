@@ -24,7 +24,7 @@ nav {
 }
 
 nav.OEVP {
-  background-image: linear-gradient(to bottom right,#33cccc, black)
+  background-image: linear-gradient(to bottom right,#33cccc, #006666)
 }
 nav.SPOE {
   background-image: linear-gradient(to bottom right,red, white)
@@ -125,12 +125,26 @@ section.wide {
   /*and in comparision to the normal section this "standard" section is wide so that´s why it´s called .wide*/
 }
 
+section.news {
+  box-sizing: border-box;
+  float: left;
+  width: 33%; /* three boxes (use 25% for four, and 50% for two, etc) */
+  padding: 40px; /* if you want space between the images */
+}
+
+section.news img{
+  width: 350px;
+  height: 250px;
+  border-radius: 25px;
+}
+
 img.party-logo{
-  margin-left: 10%;
+    margin-left: 10%;
     float:left;
     display: block;
     width: 250px;
     height: 350px;
+    border-radius: 25px;
 }
 
 img.center {
@@ -138,6 +152,18 @@ img.center {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+/*img.center:active{
+  transform: scale(2.25, 2.25);
+}*/
+
+img.gif{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 25px
 }
 
 img.fun { /*IT´S ONLY ON THE VERY BOTTOM OF THE IMPRESSUM*/
@@ -155,7 +181,7 @@ img.fun:hover {
   height: 80px;
   border: double 4px transparent;
   border-radius: 80px;
-  background-image: linear-gradient(to bottom, red, red, white,white, white,red,red), radial-gradient(circle at top, red, red, red, red,red,red, white );
+  background-image: linear-gradient(to bottom, red, red, white,white, white,red,red), radial-gradient(circle at top, red, red, red, red,red,red, white  );
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -164,7 +190,6 @@ img.fun:hover {
 
 table.party-info {
   table-layout: fixed;
-  width: 600px;
   margin: auto;
   border-collapse: collapse;
   margin-left: 0px; /*without this margin the entire table sticks to the right side*/
@@ -174,7 +199,6 @@ table.party-info {
 
 table.person-info {
   table-layout: fixed;
-  width: 1000px;
   margin: auto;
   border-collapse: collapse;
   margin-left: 100px; /*without this margin the entire table sticks to the right side*/
